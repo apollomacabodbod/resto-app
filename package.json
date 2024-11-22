@@ -23,8 +23,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "prepare": "husky",
-    "pre-commit": "npm run lint -- --fix && git add -A .",
-    "lint": "eslint './src/**/*.{js,ts,tsx}'"
+    "lint": "eslint './src/**/*.{js,ts,tsx}'",
+    "pre-commit": "npm run lint -- --fix && git add -A ."
+    
   },
   "eslintConfig": {
     "extends": [
