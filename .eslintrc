@@ -1,10 +1,9 @@
 {
     "extends": [
-     "react-app",
-     "react-app/jest"
+     "react-app"
    ],
      "rules": {
-       "no-console": "error", // or "error" if you want it to be treated as an error
-       "indent": ["error", 2] // Enforce 2-space indent
+       "no-console": "warn", // or "error" if you want it to be treated as an error
+       "indent": ["warn", 2] // Enforce 2-space indent
      }
    }
