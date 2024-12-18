@@ -1,10 +1,10 @@
 name: ReactJs Workflow
 
 on:
+  push:
+    branches: [main]
   pull_request:
-    branches:
-      - main
-      - '**' # Detects PRs for all branches
+    branches: [main]
 
 jobs:
 
