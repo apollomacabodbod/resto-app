@@ -9,9 +9,13 @@ export default function Home() {
 
 
 
-    <div className="flex flex-col bg-center bg-cover" style={{
+    <div className="relative flex flex-col bg-center bg-cover" style={{
       backgroundImage: `url(${deliciousfood})`
     }}>
+
+
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-[#28252E] opacity-30 "></div>
 
       <HomeHeroSection/>
 
