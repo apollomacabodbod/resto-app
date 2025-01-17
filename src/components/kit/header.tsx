@@ -38,7 +38,7 @@ export default function Header(){
 
 
 
-      <div className="flex flex-col border border-[#50B498] green max-w-[1200px] lg:mx-auto  px-[1.25em]">
+      <div className="flex flex-col  max-w-[1200px] lg:mx-auto  px-[1.25em]">
 
 
         <div className="flex items-center justify-between">
@@ -65,15 +65,15 @@ export default function Header(){
 
           <div className="lg:flex lg:flex-col hidden">
 
-            <div className="flex items-center gap-[2em]">
+            <div className="flex items-center  lg:gap-[1.7em] xl:gap-[2em]">
 
 
-              <Link to={""} className="text-white"> HOME</Link>
-              <Link to={""} className="text-white"> RESERVATION</Link>
-              <Link to={""} className="text-white"> MENU</Link>
-              <Link to={""} className="text-white"> BLOG</Link>
-              <Link to={""} className="text-white"> CONTACT</Link>
-
+              <Link to={""} className="text-white font-inter text-[0.875rem] not-italic font-bold "> HOME</Link>
+              <Link to={""} className="text-white font-inter text-[0.875rem] not-italic font-bold "> RESERVATION</Link>
+              <Link to={""} className="text-white font-inter text-[0.875rem] not-italic font-bold "> MENU</Link>
+              <Link to={""} className="text-white font-inter text-[0.875rem] not-italic font-bold "> BLOG</Link>
+              <Link to={""} className="text-white font-inter text-[0.875rem] not-italic font-bold "> SHOP</Link>
+              <Link to={""} className="text-white font-inter text-[0.875rem] not-italic font-bold "> CONTACT</Link>
 
 
 
@@ -89,7 +89,7 @@ export default function Header(){
             <div className="flex items-center gap-[1em] ">
 
 
-              <div className="flex items-center gap-[1em] cursor-pointer   hover:opacity-100 transition-opacity duration-1000 ease-in-out active:scale-95 active:transition-transform active:duration-200 active:ease-out">
+              <div className="flex items-center gap-[0.5em] cursor-pointer   hover:opacity-100 transition-opacity duration-1000 ease-in-out active:scale-95 active:transition-transform active:duration-200 active:ease-out">
     
                 <img src={telephone} alt="" />
 
@@ -102,7 +102,7 @@ export default function Header(){
 
 
 
-              <p className="cursor-pointer opacity-70 hover:opacity-100 transition-opacity duration-1000 ease-in-out active:scale-95 active:transition-transform active:duration-200 active:ease-out text-white py-[0.5em] px-[1.5em] border border-white rounded-[3.125em] text-center font-inter text-[1rem] font-bold not-italic">Book a Table</p>
+              <p className="cursor-pointer  hover:opacity-100 transition-opacity duration-1000 ease-in-out active:scale-95 active:transition-transform active:duration-200 active:ease-out text-white py-[0.5em] px-[1.5em] border border-white rounded-[3.125em] text-center font-inter text-[1rem] font-bold not-italic">Book a Table</p>
 
 
 
