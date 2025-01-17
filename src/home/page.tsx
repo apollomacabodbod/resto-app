@@ -9,7 +9,7 @@ export default function Home() {
 
 
 
-    <div className="relative flex flex-col bg-center bg-cover" style={{
+    <div className="relative flex flex-col  bg-cover bg-bottom" style={{
       backgroundImage: `url(${deliciousfood})`
     }}>
 
