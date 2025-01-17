@@ -7,10 +7,10 @@ export default function HomeHeroSection(){
 
   return(<>
 
-    <div className="z-10 flex flex-col my-[9em]  max-w-[1200px] lg:mx-auto px-[1.25em] border border-[#50B498] green">
+    <div className="z-10 flex flex-col my-[9em]  max-w-[1200px] lg:mx-auto px-[1.25em] ">
 
 
-      <motion.p className="font-literata text-white text-[3.7em] sm:text-[7.1875em] not-italic leading-[1em] border border-[#50B498] green transition-all duration-1000 ease-in-out"
+      <motion.p className="font-literata text-white text-[3.7em] sm:text-[7.1875em] not-italic leading-[1em]  transition-all duration-1000 ease-in-out"
       
       
         initial="hidden"
@@ -49,7 +49,7 @@ export default function HomeHeroSection(){
       >Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempor incididunt ut labore et dolore magna.</motion.p>
 
     
-      <div className="sm:flex sm:items-center border border-[#50B498] green mt-[2em] sm:gap-[1.875em]">
+      <div className="sm:flex sm:items-center  mt-[2em] sm:gap-[1.875em]">
 
 
         <motion.div className='transition-all duration-1000 ease-in-out'
