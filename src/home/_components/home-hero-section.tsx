@@ -16,7 +16,7 @@ export default function HomeHeroSection(){
     
       <div className="sm:flex sm:items-center sm:border border-[#50B498] green mt-[2em] sm:gap-[1.875em]">
 
-        <div className="flex flex-col bg-[#E4C620] py-[0.75em] px-[1.5em] rounded-[3.125em]">
+        <div className="flex flex-col bg-[#E4C620] py-[0.75em] px-[1.5em] rounded-[3.125em] cursor-pointer  hover:opacity-100 transition-opacity duration-1000 ease-in-out active:scale-95 active:transition-transform active:duration-200 active:ease-out">
 
           <div className="flex items-center justify-center gap-[0.5em] ">
 
@@ -29,7 +29,7 @@ export default function HomeHeroSection(){
         </div>
 
 
-        <div className="flex flex-col border border-white py-[0.75em] px-[1.5em] mt-[1em] sm:mt-[0em] rounded-[3.125em]">
+        <div className="flex flex-col border border-white py-[0.75em] px-[1.5em] mt-[1em] sm:mt-[0em] rounded-[3.125em] cursor-pointer  hover:opacity-100 transition-opacity duration-1000 ease-in-out active:scale-95 active:transition-transform active:duration-200 active:ease-out" >
 
           <div className="flex items-center justify-center gap-[0.5em] ">
 
