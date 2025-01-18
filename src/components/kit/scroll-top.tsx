@@ -8,7 +8,11 @@ export default function ScrollToTop() {
 
   useEffect(() => {
     if (lenis) {
-      lenis.scrollTo(0, { immediate: true }); // Smooth scroll to top
+      // Ensure lenis is ready before scrolling
+      lenis.scrollTo(0, { immediate: true });
+    } else {
+      // Fallback to native scroll if lenis is not available
+      window.scrollTo(0, 0);
     }
   }, [pathname, lenis]);
 
