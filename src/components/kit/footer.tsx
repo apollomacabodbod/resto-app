@@ -5,6 +5,9 @@ import instagram from 'src/assets/footer/instagram.svg'
 import twitter from 'src/assets/footer/twitter.svg'
 import youtube from 'src/assets/footer/youtube.svg'
 
+
+import { motion } from "framer-motion"
+
 export default function Footer(){
 
   return (<>
@@ -18,14 +21,67 @@ export default function Footer(){
         <div className="flex flex-col border border-[#50B498] green">
 
 
-          <p className="text-[#E4C620] font-literata text-[1.5rem] not-italic font-medium ">Know About Resto.</p>
+          <motion.p className="text-[#E4C620] font-literata text-[1.5rem] not-italic font-medium transition-all duration-1000 ease-in-out"
+          
+          
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+          
+          
+          
+          >Know About Resto.</motion.p>
 
 
-          <p className="text-[#90A3B1] font-inter text-[1rem] not-italic font-normal mt-[1em]">Lorem ipsum dolor sit amet, consec tetur adipi scing elit. Morbi id at mauris dis tincidunt ipsum faucibus ipsum.</p>
+          <motion.p className="text-[#90A3B1] font-inter text-[1rem] not-italic font-normal mt-[1em] transition-all duration-1000 ease-in-out"
+          
+          
+          
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+          
+          
+          
+          >Lorem ipsum dolor sit amet, consec tetur adipi scing elit. Morbi id at mauris dis tincidunt ipsum faucibus ipsum.</motion.p>
 
 
 
-          <img src={logo} alt="" width={120}  className="mt-[2em]"/>
+          <motion.img src={logo} alt="" width={120}  className="mt-[2em] transition-all duration-1000 ease-in-out"
+          
+          
+          
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+          
+          
+          
+          />
 
         </div>
 
@@ -34,78 +90,228 @@ export default function Footer(){
         <div className="flex flex-col border border-[#50B498] green gap-[1em]">
 
 
-          <p className="text-[#E4C620] font-literata text-[1.5rem] not-italic font-medium ">Opening Hours</p>
+          <motion.p className="text-[#E4C620] font-literata text-[1.5rem] not-italic font-medium transition-all duration-1000 ease-in-out"
+          
+          
+            
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+          
+          
+          
+          >Opening Hours</motion.p>
 
 
-          <p className="text-[#90A3B1] font-inter text-[1rem] not-italic font-normal ">Lorem ipsum dolor sit amet, consectetur</p>
+          <motion.p className="text-[#90A3B1] font-inter text-[1rem] not-italic font-normal transition-all duration-1000 ease-in-out"
+          
+          
+             
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+          
+          
+          
+          >Lorem ipsum dolor sit amet, consectetur</motion.p>
 
 
 
-          <div className="flex items-center justify-between">
+          <motion.div className="flex items-center justify-between transition-all duration-1000 ease-in-out"
+          
+          
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+          
+          
+          >
 
             <p className="text-[#FFF4E2] ">Monday</p>
             <p className="text-[#90A3B1] ">Closed</p>
 
 
-          </div>
+          </motion.div>
 
 
 
-          <div className="flex items-center justify-between">
+          <motion.div className="flex items-center justify-between transtition-all duration-1000 ease-in-out"
+          
+          
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+          
+          
+          >
 
             <p className="text-[#FFF4E2] ">Tuesday</p>
             <p className="text-[#90A3B1] ">10 AM - 11 PM</p>
 
 
-          </div>
+          </motion.div>
 
 
 
 
-          <div className="flex items-center justify-between">
+          <motion.div className="flex items-center justify-between transition-all duration-1000 ease-in-out"
+          
+          
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+          
+          
+          >
 
             <p className="text-[#FFF4E2] ">Wednesday</p>
             <p className="text-[#90A3B1] ">10 AM - 11 PM</p>
 
 
-          </div>
+          </motion.div>
 
 
 
-          <div className="flex items-center justify-between">
+          <motion.div className="flex items-center justify-between transition-all duration-1000 ease-in-out"
+          
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+          
+          
+          
+          
+          >
 
             <p className="text-[#FFF4E2] ">Thursday</p>
             <p className="text-[#90A3B1] ">10 AM - 11 PM</p>
 
 
-          </div>
+          </motion.div>
 
 
-          <div className="flex items-center justify-between">
+          <motion.div className="flex items-center justify-between transition-all duration-1000 ease-in-out"
+          
+          
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+          
+          
+          >
 
             <p className="text-[#FFF4E2] ">Friday</p>
             <p className="text-[#90A3B1] ">10 AM - 11 PM</p>
 
 
-          </div>
+          </motion.div>
 
 
-          <div className="flex items-center justify-between">
+          <motion.div className="flex items-center justify-between transition-all duration-1000 ease-in-out"
+          
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+          
+          
+          >
 
             <p className="text-[#FFF4E2] ">Saturday</p>
             <p className="text-[#90A3B1] ">10 AM - 11 PM</p>
 
 
-          </div>
+          </motion.div>
 
 
-          <div className="flex items-center justify-between">
+          <motion.div className="flex items-center justify-between transition-all duration-1000 ease-in-out"
+          
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+          
+          
+          >
+
+
+
 
             <p className="text-[#FFF4E2] ">Sunday</p>
             <p className="text-[#90A3B1] ">10 AM - 11 PM</p>
 
 
-          </div>
+          </motion.div>
 
 
 
@@ -115,44 +321,235 @@ export default function Footer(){
         <div className="flex flex-col border border-[#50B498] green ">
 
 
-          <p className="text-[#E4C620] font-literata text-[1.5rem] not-italic font-medium ">Contact</p>
+          <motion.p className="text-[#E4C620] font-literata text-[1.5rem] not-italic font-medium transtion-all duration-1000 ease-in-out"
+          
+          
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+          
+          
+          
+          >Contact</motion.p>
 
-          <p className="text-[#FFF4E2] mt-[1em]">Address</p>
+          <motion.p className="text-[#FFF4E2] mt-[1em] transition-all duration-1000 ease-in-out"
+          
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+          
+          
+          >Address</motion.p>
 
-          <p className="text-[#90A3B1]">768 Market Street San Francisco, CA 64015, United States</p>
+          <motion.p className="text-[#90A3B1] transition-all duration-1000 ease-in-out"
+          
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+          
+          
+          >768 Market Street San Francisco, CA 64015, United States</motion.p>
 
-          <p className="text-[#FFF4E2] mt-[0.5em]">Phone</p>
+          <motion.p className="text-[#FFF4E2] mt-[0.5em] transition-all duration-1000 ease-in-out"
+          
+          
+          
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+          
+          
+          
+          >Phone</motion.p>
 
-          <p className="text-[#90A3B1]">(+021) 345 678 910</p>
+          <motion.p className="text-[#90A3B1] transition-all duration-1000 ease-in-out"
+          
+          
+          
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+          
+          
+          
+          >(+021) 345 678 910</motion.p>
 
 
-          <p className="text-[#FFF4E2] mt-[0.5em]">Email</p>
+          <motion.p className="text-[#FFF4E2] mt-[0.5em] transtion-all duration-1000 ease-in-out"
+          
+          
+          
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+          
+          
+          
+          >Email</motion.p>
 
-          <p className="text-[#90A3B1]">info@resto.com</p>
+          <motion.p className="text-[#90A3B1] transiton-all duration-1000 ease-in-out"
+          
+          
+          
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+          
+          
+          
+          >info@resto.com</motion.p>
 
 
 
 
           <div className="flex items-center gap-[1em] sm:justify-start sm:gap-[1em] lg:gap-[0em] lg:justify-between ">
 
-            <div className="flex flex-col bg-[#37343E] rounded-full w-[50px] h-[50px] mt-[1em]">
+            <motion.div className="flex flex-col bg-[#37343E] rounded-full w-[50px] h-[50px] mt-[1em] transition-all duration-1000 ease-in-out"
+            
+            
+                    
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, y: 10 },
+                visible: { 
+                  opacity: 1, 
+                  y: 0,
+                  transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+                },
+              }}
+          
+          
+            
+            
+            >
               <img src={facebook} alt="Facebook icon" className="w-[16px] h-[16px]  m-auto" />
-            </div>
+            </motion.div>
 
-            <div className="flex flex-col bg-[#37343E] rounded-full w-[50px] h-[50px] mt-[1em]">
+            <motion.div className="flex flex-col bg-[#37343E] rounded-full w-[50px] h-[50px] mt-[1em] transition-all duration-1000 ease-in-out"
+            
+            
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, y: 10 },
+                visible: { 
+                  opacity: 1, 
+                  y: 0,
+                  transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+                },
+              }}
+            
+            
+            
+            
+            >
               <img src={instagram} alt="Facebook icon" className="w-[16px] h-[16px]  m-auto" />
-            </div>
+            </motion.div>
 
 
-            <div className="flex flex-col bg-[#37343E] rounded-full w-[50px] h-[50px] mt-[1em]">
+            <motion.div className="flex flex-col bg-[#37343E] rounded-full w-[50px] h-[50px] mt-[1em] transition-all duration-1000 ease-in-out"
+            
+            
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, y: 10 },
+                visible: { 
+                  opacity: 1, 
+                  y: 0,
+                  transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+                },
+              }}
+            
+            
+            
+            
+            >
               <img src={twitter} alt="Facebook icon" className="w-[16px] h-[16px]  m-auto" />
-            </div>
+            </motion.div>
 
 
 
-            <div className="flex flex-col bg-[#37343E] rounded-full w-[50px] h-[50px] mt-[1em]">
+            <motion.div className="flex flex-col bg-[#37343E] rounded-full w-[50px] h-[50px] mt-[1em] transition-all duration-1000 ease-in-out"
+            
+            
+            
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, y: 10 },
+                visible: { 
+                  opacity: 1, 
+                  y: 0,
+                  transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+                },
+              }}
+            
+            
+            >
               <img src={youtube} alt="Facebook icon" className="w-[16px] h-[16px]  m-auto" />
-            </div>
+            </motion.div>
 
 
           </div>
@@ -172,24 +569,100 @@ export default function Footer(){
         <div className="flex flex-col border border-[#50B498] green gap-[1em]">
 
 
-          <p className="text-[#E4C620] font-literata text-[1.5rem] not-italic font-medium ">Newsletter</p>
+          <motion.p className="text-[#E4C620] font-literata text-[1.5rem] not-italic font-medium transition-all duration-1000 ease-in-out"
+          
+          
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+          
+          
+          
+          
+          >Newsletter</motion.p>
 
 
-          <p className="text-[#90A3B1] font-inter text-[1rem] not-italic font-normal mt-[1em]">Subscribe our newsletter & get all promo!</p>
+          <motion.p className="text-[#90A3B1] font-inter text-[1rem] not-italic font-normal mt-[1em] transition-all duration-1000 ease-in-out"
+          
+          
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+          
+          
+          
+          
+          >Subscribe our newsletter & get all promo!</motion.p>
 
 
-          <input type="text" className="outline-none py-[0.75em] px-[1em] text-[#90A3B1] font-inter text-[1rem] not-italic font-normal " />
+          <motion.input type="text" className="outline-none py-[0.75em] px-[1em] text-[#90A3B1] font-inter text-[1rem] not-italic font-normal transition-all duration-1000 ease-in-out" 
+          
+          
+          
+            
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+          
+          
+          
+          
+          
+          />
 
 
 
 
 
-          <div className="flex items-center">
+          <motion.div className="flex items-center transition-all duration-1000 ease-in-out"
+          
+          
+          
+                      
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+          
+          
+          
+          >
 
             <p className="bg-[#E4C620] py-[0.75em] px-[1.5em] rounded-[3.125em] text-[#28252E] font-inter text-[1rem] not-italic font-bold cursor-pointer  hover:opacity-100 transition-opacity duration-1000 ease-in-out active:scale-95 active:transition-transform active:duration-200 active:ease-out">Subscribe</p>
 
 
-          </div>
+          </motion.div>
 
 
 
@@ -222,17 +695,141 @@ export default function Footer(){
         <div className="sm:flex sm:items-center sm:justify-center sm:gap-[2em] ">
 
 
-          <p className="text-[#90A3B1] font-inter text-[1rem] not-italic font-bold mt-[0.5em]">HOME</p>
-          <p className="text-[#90A3B1] font-inter text-[1rem] not-italic font-bold mt-[0.5em]">RESERVATION</p>
-          <p className="text-[#90A3B1] font-inter text-[1rem] not-italic font-bold mt-[0.5em]">MENU</p>
-          <p className="text-[#90A3B1] font-inter text-[1rem] not-italic font-bold mt-[0.5em]">BLOG</p>
-          <p className="text-[#90A3B1] font-inter text-[1rem] not-italic font-bold mt-[0.5em]">SHOP</p>
-          <p className="text-[#90A3B1] font-inter text-[1rem] not-italic font-bold mt-[0.5em]">CONTACT</p>
+          <motion.p className="text-[#90A3B1] font-inter text-[1rem] not-italic font-bold mt-[0.5em] transition-all duration-1000 ease-in-out"
+          
+          
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+          
+          
+          
+          >HOME</motion.p>
+          <motion.p className="text-[#90A3B1] font-inter text-[1rem] not-italic font-bold mt-[0.5em]  transition-all duration-1000 ease-in-out"
+          
+          
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+          
+          
+          
+          >RESERVATION</motion.p>
+          <motion.p className="text-[#90A3B1] font-inter text-[1rem] not-italic font-bold mt-[0.5em]  transition-all duration-1000 ease-in-out"
+          
+          
+          
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+          
+          
+          
+          >MENU</motion.p>
+          <motion.p className="text-[#90A3B1] font-inter text-[1rem] not-italic font-bold mt-[0.5em]  transition-all duration-1000 ease-in-out"
+          
+          
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+          
+          
+          
+          
+          >BLOG</motion.p>
+          <motion.p className="text-[#90A3B1] font-inter text-[1rem] not-italic font-bold mt-[0.5em]  transition-all duration-1000 ease-in-out"
+          
+          
+          
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+          
+          
+          
+          >SHOP</motion.p>
+          <motion.p className="text-[#90A3B1] font-inter text-[1rem] not-italic font-bold mt-[0.5em]  transition-all duration-1000 ease-in-out"
+          
+          
+          
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+          
+          
+          
+          >CONTACT</motion.p>
 
 
         </div>
 
-        <p className="text-center text-[#90A3B1] font-inter text-[0.8125rem] not-italic font-normal mt-[2em]">© 2025 Resto.  All Rights Reserved.</p>
+        <motion.p className="text-center text-[#90A3B1] font-inter text-[0.8125rem] not-italic font-normal mt-[2em] transition-all duration-1000 ease-in-out"
+        
+        
+         
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+        
+        
+        
+        >© 2025 Resto.  All Rights Reserved.</motion.p>
 
 
       </div>
