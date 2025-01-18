@@ -10,10 +10,10 @@ export default function Footer(){
   return (<>
 
 
-    <div className="bg-[#28252E]">
+    <div className="bg-[#28252E] ">
 
 
-      <div className="grid  grid-cols-1 sm:grid-cols-2   lg:grid-cols-4 max-w-[1200px] lg:mx-auto gap-[3.75em] px-[1.25em] py-[6.25em] border border-[#50B498] green">
+      <div className="grid  grid-cols-1 sm:grid-cols-2   lg:grid-cols-4 max-w-[1200px] lg:mx-auto px-[1.25em] gap-[1.5em]  py-[6.25em] ">
 
         <div className="flex flex-col border border-[#50B498] green">
 
@@ -133,7 +133,7 @@ export default function Footer(){
 
 
 
-          <div className="flex items-center gap-[1em] sm:justify-between sm:gap-[0em]">
+          <div className="flex items-center gap-[1em] sm:justify-start sm:gap-[1em] lg:gap-[0em] lg:justify-between ">
 
             <div className="flex flex-col bg-[#37343E] rounded-full w-[50px] h-[50px] mt-[1em]">
               <img src={facebook} alt="Facebook icon" className="w-[16px] h-[16px]  m-auto" />
@@ -205,6 +205,39 @@ export default function Footer(){
 
 
       </div>
+
+
+
+    
+
+
+    </div>
+
+
+    <div className="border-t-2  border-dotted border-[#90A3B1] bg-[#28252E]">
+
+
+      <div className="flex flex-col max-w-[1200px] lg:mx-auto px-[1.25em] py-[2em] ">
+
+        <div className="sm:flex sm:items-center sm:justify-center sm:gap-[2em] ">
+
+
+          <p className="text-[#90A3B1] font-inter text-[1rem] not-italic font-bold mt-[0.5em]">HOME</p>
+          <p className="text-[#90A3B1] font-inter text-[1rem] not-italic font-bold mt-[0.5em]">RESERVATION</p>
+          <p className="text-[#90A3B1] font-inter text-[1rem] not-italic font-bold mt-[0.5em]">MENU</p>
+          <p className="text-[#90A3B1] font-inter text-[1rem] not-italic font-bold mt-[0.5em]">BLOG</p>
+          <p className="text-[#90A3B1] font-inter text-[1rem] not-italic font-bold mt-[0.5em]">SHOP</p>
+          <p className="text-[#90A3B1] font-inter text-[1rem] not-italic font-bold mt-[0.5em]">CONTACT</p>
+
+
+        </div>
+
+        <p className="text-center text-[#90A3B1] font-inter text-[0.8125rem] not-italic font-normal mt-[2em]">© 2022 Resto. Powered by ThemeWarrior</p>
+
+
+      </div>
+
+
 
 
 
