@@ -1,5 +1,5 @@
 import React from "react";
-import {  Routes, Route } from "react-router-dom";
+import {  Routes, Route, useLocation } from "react-router-dom";
 import Home from "./home/page";
 import Header from "./components/kit/header";
 import { LenisProvider } from "./context/smooth-scroll";
@@ -7,6 +7,11 @@ import ScrollToTop from "./components/kit/scroll-top";
 import Footer from "./components/kit/footer";
 
 function App() {
+
+  const location = useLocation(); // Now safe to use because it's inside a Router
+
+
+
   return (
 
     <>
@@ -25,7 +30,13 @@ function App() {
         </Routes>
 
 
-        <Footer/>
+        <div key={location.pathname}>
+
+          <Footer/>
+
+        </div>
+
+       
 
       </LenisProvider>
     
