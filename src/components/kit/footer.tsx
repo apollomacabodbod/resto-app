@@ -13,7 +13,7 @@ export default function Footer(){
     <div className="bg-[#28252E]">
 
 
-      <div className="grid grid-cols-4 max-w-[1200px] lg:mx-auto gap-[3.75em] px-[1.25em] py-[6.25em] border border-[#50B498] green">
+      <div className="grid  grid-cols-1 sm:grid-cols-2   lg:grid-cols-4 max-w-[1200px] lg:mx-auto gap-[3.75em] px-[1.25em] py-[6.25em] border border-[#50B498] green">
 
         <div className="flex flex-col border border-[#50B498] green">
 
@@ -133,7 +133,7 @@ export default function Footer(){
 
 
 
-          <div className="flex items-center justify-between">
+          <div className="flex items-center gap-[1em] sm:justify-between sm:gap-[0em]">
 
             <div className="flex flex-col bg-[#37343E] rounded-full w-[50px] h-[50px] mt-[1em]">
               <img src={facebook} alt="Facebook icon" className="w-[16px] h-[16px]  m-auto" />
