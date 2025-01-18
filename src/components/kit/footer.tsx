@@ -186,7 +186,7 @@ export default function Footer(){
 
           <div className="flex items-center">
 
-            <p className="bg-[#E4C620] py-[0.75em] px-[1.5em] rounded-[3.125em] text-[#28252E] font-inter text-[1rem] not-italic font-bold ">Subscribe</p>
+            <p className="bg-[#E4C620] py-[0.75em] px-[1.5em] rounded-[3.125em] text-[#28252E] font-inter text-[1rem] not-italic font-bold cursor-pointer  hover:opacity-100 transition-opacity duration-1000 ease-in-out active:scale-95 active:transition-transform active:duration-200 active:ease-out">Subscribe</p>
 
 
           </div>
