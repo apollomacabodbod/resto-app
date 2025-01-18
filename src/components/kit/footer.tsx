@@ -232,7 +232,7 @@ export default function Footer(){
 
         </div>
 
-        <p className="text-center text-[#90A3B1] font-inter text-[0.8125rem] not-italic font-normal mt-[2em]">© 2022 Resto. Powered by ThemeWarrior</p>
+        <p className="text-center text-[#90A3B1] font-inter text-[0.8125rem] not-italic font-normal mt-[2em]">© 2025 Resto. Powered by ThemeWarrior</p>
 
 
       </div>
