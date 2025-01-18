@@ -108,6 +108,35 @@ export default function Footer(){
         </div>
 
 
+        <div className="flex flex-col border border-[#50B498] green ">
+
+
+          <p className="text-[#E4C620] font-literata text-[1.5rem] not-italic font-medium ">Contact</p>
+
+          <p className="text-[#FFF4E2] mt-[1em]">Address</p>
+
+          <p className="text-[#90A3B1]">768 Market Street San Francisco, CA 64015, United States</p>
+
+          <p className="text-[#FFF4E2] mt-[0.5em]">Phone</p>
+
+          <p className="text-[#90A3B1]">(+021) 345 678 910</p>
+
+
+          <p className="text-[#FFF4E2] mt-[0.5em]">Email</p>
+
+          <p className="text-[#90A3B1]">info@resto.com</p>
+
+
+
+
+
+        </div>
+
+
+
+
+
+
 
 
 
