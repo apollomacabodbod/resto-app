@@ -16,9 +16,9 @@ export default function Footer(){
     <div className="bg-[#28252E] ">
 
 
-      <div className="grid  grid-cols-1 sm:grid-cols-2   lg:grid-cols-4 max-w-[1200px] lg:mx-auto px-[1.25em] gap-[1.5em]  py-[6.25em] ">
+      <div className="grid  grid-cols-1 sm:grid-cols-2   lg:grid-cols-4 max-w-[1200px] lg:mx-auto px-[1.25em] gap-[3.75em] py-[6.25em] ">
 
-        <div className="flex flex-col border border-[#50B498] green">
+        <div className="flex flex-col ">
 
 
           <motion.p className="text-[#E4C620] font-literata text-[1.5rem] not-italic font-medium transition-all duration-1000 ease-in-out"
@@ -87,7 +87,7 @@ export default function Footer(){
 
 
 
-        <div className="flex flex-col border border-[#50B498] green gap-[1em]">
+        <div className="flex flex-col  gap-[1em]">
 
 
           <motion.p className="text-[#E4C620] font-literata text-[1.5rem] not-italic font-medium transition-all duration-1000 ease-in-out"
@@ -318,7 +318,7 @@ export default function Footer(){
         </div>
 
 
-        <div className="flex flex-col border border-[#50B498] green ">
+        <div className="flex flex-col ">
 
 
           <motion.p className="text-[#E4C620] font-literata text-[1.5rem] not-italic font-medium transtion-all duration-1000 ease-in-out"
@@ -415,7 +415,7 @@ export default function Footer(){
           >(+021) 345 678 910</motion.p>
 
 
-          <motion.p className="text-[#FFF4E2] mt-[0.5em] transtion-all duration-1000 ease-in-out"
+          <motion.p className="text-[#FFF4E2] mt-[0.5em] transtion-all duration-1000 ease-in-out "
           
           
           
@@ -458,7 +458,123 @@ export default function Footer(){
 
 
 
-          <div className="flex items-center gap-[1em] sm:justify-start sm:gap-[1em] lg:gap-[0em] lg:justify-between ">
+
+          <div className="grid grid-cols-4 lg:gap-[2em] mt-[1em] ">
+
+
+
+
+
+            <motion.div className="flex flex-col bg-[#37343E]  rounded-full w-[50px] h-[50px]  transition-all duration-1000 ease-in-out"
+
+
+        
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, y: 10 },
+                visible: { 
+                  opacity: 1, 
+                  y: 0,
+                  transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+                },
+              }}
+
+
+
+
+            >
+              <img src={facebook} alt="Facebook icon" className="w-[16px] h-[16px]  m-auto" />
+            </motion.div>
+
+
+
+            <motion.div className="flex flex-col bg-[#37343E] rounded-full w-[50px] h-[50px]  transition-all duration-1000 ease-in-out"
+
+
+        
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, y: 10 },
+                visible: { 
+                  opacity: 1, 
+                  y: 0,
+                  transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+                },
+              }}
+
+
+
+
+            >
+              <img src={twitter} alt="Facebook icon" className="w-[16px] h-[16px]  m-auto" />
+            </motion.div>
+
+
+
+
+
+            <motion.div className="flex flex-col bg-[#37343E] rounded-full w-[50px] h-[50px]  transition-all duration-1000 ease-in-out"
+
+
+        
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, y: 10 },
+                visible: { 
+                  opacity: 1, 
+                  y: 0,
+                  transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+                },
+              }}
+
+
+
+
+            >
+              <img src={instagram} alt="Facebook icon" className="w-[16px] h-[16px]  m-auto" />
+            </motion.div>
+
+
+
+
+
+            <motion.div className="flex flex-col bg-[#37343E] rounded-full w-[50px] h-[50px]  transition-all duration-1000 ease-in-out"
+
+
+        
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, y: 10 },
+                visible: { 
+                  opacity: 1, 
+                  y: 0,
+                  transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+                },
+              }}
+
+
+
+
+            >
+              <img src={youtube} alt="Facebook icon" className="w-[16px] h-[16px]  m-auto" />
+            </motion.div>
+
+
+
+
+
+          </div>
+
+
+          {/* <div className="flex items-center gap-[1em] sm:justify-start sm:gap-[1em] lg:gap-[0em] lg:justify-between ">
 
             <motion.div className="flex flex-col bg-[#37343E] rounded-full w-[50px] h-[50px] mt-[1em] transition-all duration-1000 ease-in-out"
             
@@ -552,7 +668,7 @@ export default function Footer(){
             </motion.div>
 
 
-          </div>
+          </div> */}
  
     
 
@@ -566,7 +682,7 @@ export default function Footer(){
 
 
 
-        <div className="flex flex-col border border-[#50B498] green gap-[1em]">
+        <div className="flex flex-col gap-[1em]">
 
 
           <motion.p className="text-[#E4C620] font-literata text-[1.5rem] not-italic font-medium transition-all duration-1000 ease-in-out"
