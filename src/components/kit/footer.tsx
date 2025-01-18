@@ -1,5 +1,9 @@
 
 import logo from "src/assets/header/logo.svg"
+import facebook from 'src/assets/footer/facebook.svg'
+import instagram from 'src/assets/footer/instagram.svg'
+import twitter from 'src/assets/footer/twitter.svg'
+import youtube from 'src/assets/footer/youtube.svg'
 
 export default function Footer(){
 
@@ -127,6 +131,65 @@ export default function Footer(){
           <p className="text-[#90A3B1]">info@resto.com</p>
 
 
+
+
+          <div className="flex items-center justify-between">
+
+            <div className="flex flex-col bg-[#37343E] rounded-full w-[50px] h-[50px] mt-[1em]">
+              <img src={facebook} alt="Facebook icon" className="w-[16px] h-[16px]  m-auto" />
+            </div>
+
+            <div className="flex flex-col bg-[#37343E] rounded-full w-[50px] h-[50px] mt-[1em]">
+              <img src={instagram} alt="Facebook icon" className="w-[16px] h-[16px]  m-auto" />
+            </div>
+
+
+            <div className="flex flex-col bg-[#37343E] rounded-full w-[50px] h-[50px] mt-[1em]">
+              <img src={twitter} alt="Facebook icon" className="w-[16px] h-[16px]  m-auto" />
+            </div>
+
+
+
+            <div className="flex flex-col bg-[#37343E] rounded-full w-[50px] h-[50px] mt-[1em]">
+              <img src={youtube} alt="Facebook icon" className="w-[16px] h-[16px]  m-auto" />
+            </div>
+
+
+          </div>
+ 
+    
+
+
+
+
+
+
+        </div>
+
+
+
+
+        <div className="flex flex-col border border-[#50B498] green gap-[1em]">
+
+
+          <p className="text-[#E4C620] font-literata text-[1.5rem] not-italic font-medium ">Newsletter</p>
+
+
+          <p className="text-[#90A3B1] font-inter text-[1rem] not-italic font-normal mt-[1em]">Subscribe our newsletter & get all promo!</p>
+
+
+          <input type="text" className="outline-none py-[0.75em] px-[1em] text-[#90A3B1] font-inter text-[1rem] not-italic font-normal " />
+
+
+
+
+
+          <div className="flex items-center">
+
+            <p className="bg-[#E4C620] py-[0.75em] px-[1.5em] rounded-[3.125em] text-[#28252E] font-inter text-[1rem] not-italic font-bold ">Subscribe</p>
+
+
+          </div>
 
 
 
