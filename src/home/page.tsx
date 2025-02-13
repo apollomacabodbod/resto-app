@@ -15,7 +15,7 @@ export default function Home() {
 
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-[#28252E] opacity-50 "></div>
+      <div className="absolute inset-0 bg-[#28252E] opacity-40 "></div>
 
       <HomeHeroSection/>
 
