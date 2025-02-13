@@ -24,19 +24,22 @@ export default function Home() {
     </div>
 
 
-
-    <div className='relative bg-gradient-to-b from-[#BB3A12] to-[#28252E]/100'>
-
-
+    <div className="relative bg-gradient-to-b from-[#BB3A12] to-[#28252E]/100 ">
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/50"></div>
+      <div className="absolute inset-0 bg-black/50 "></div>
 
-
-      <HomeAboutUs />
+      {/* About Us component */}
+      <div className="relative z-60 ">
+        <HomeAboutUs />
+      </div>
 
 
 
     </div>
+
+
+
+
 
  
 
