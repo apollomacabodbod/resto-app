@@ -22,6 +22,21 @@ export default function Home() {
 
     </div>
 
+
+    <div className="relative flex flex-col min-h-screen bg-gradient-to-b from-[#BB3A12] to-[#28252E]/100">
+  
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/50"></div>
+
+      {/* Content */}
+      <p className="relative z-10 text-white p-4">
+    
+      </p>
+
+    </div>
+
+
+
     
   </>)
 }
