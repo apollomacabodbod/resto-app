@@ -5,6 +5,7 @@ import logo from "src/assets/header/logo.svg"
 import { Link } from "react-router-dom";
 import telephone from 'src/assets/header/telephone.svg'
 import humberger from "src/assets/header/humberger.svg"
+import Sidebar from "./side-bar";
 
 
 export default function Header(){
@@ -12,6 +13,7 @@ export default function Header(){
 
 
   const [scrolling, setScrolling] = useState(false);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
   
   
   
@@ -120,7 +122,9 @@ export default function Header(){
           </div>
 
 
-          <div className="flex flex-col lg:hidden cursor-pointer  hover:opacity-100 transition-opacity duration-1000 ease-in-out active:scale-95 active:transition-transform active:duration-200 active:ease-out">
+          <div className="flex flex-col lg:hidden cursor-pointer  hover:opacity-100 transition-opacity duration-1000 ease-in-out active:scale-95 active:transition-transform active:duration-200 active:ease-out"
+            onClick={() => setSidebarOpen(!sidebarOpen)}
+          >
 
 
 
@@ -155,6 +159,23 @@ export default function Header(){
       
 
     </div>
+
+
+
+
+    {/* Overlay */}
+    {sidebarOpen && (
+      <div
+        className="fixed inset-0 bg-black opacity-50 z-40"
+        onClick={() => setSidebarOpen(false)} // Close sidebar on overlay click
+      />
+    )}
+
+    {/* Sidebar */}
+    <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
+
+
+
 
 
     
