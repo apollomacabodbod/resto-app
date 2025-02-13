@@ -1,6 +1,7 @@
 
 import  deliciousfood from "src/assets/home/delicious-food.jpg"
 import HomeHeroSection from "./_components/home-hero-section"
+import HomeAboutUs from "./_components/about-us"
 
 
 export default function Home() {
@@ -23,17 +24,23 @@ export default function Home() {
     </div>
 
 
-    <div className="relative flex flex-col min-h-screen bg-gradient-to-b from-[#BB3A12] to-[#28252E]/100">
-  
+
+    <div className='relative bg-gradient-to-b from-[#BB3A12] to-[#28252E]/100'>
+
+
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/50"></div>
 
-      {/* Content */}
-      <p className="relative z-10 text-white p-4">
-    
-      </p>
+
+      <HomeAboutUs />
+
+
 
     </div>
+
+ 
+
+
 
 
 
