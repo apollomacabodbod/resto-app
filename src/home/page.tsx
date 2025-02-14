@@ -2,6 +2,7 @@
 import  deliciousfood from "src/assets/home/delicious-food.jpg"
 import HomeHeroSection from "./_components/home-hero-section"
 import HomeAboutUs from "./_components/about-us"
+import HomeServe from "./_components/home-serve"
 
 
 export default function Home() {
@@ -31,6 +32,7 @@ export default function Home() {
       {/* About Us component */}
       <div className="relative z-60 ">
         <HomeAboutUs />
+        <HomeServe/>
       </div>
 
 
