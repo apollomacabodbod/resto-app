@@ -60,7 +60,7 @@ export default function HomeAboutUs() {
         <img src={smilingFemale} alt="" className='absolute  top-[-13em] md:top-[-14em]  xl:top-[-14em]  left-0   md:left-[10%] xl:left-[30%]   w-[50%] xl:w-[34.75em] h-[15em] lg:h-[20em] md:h-[20em] xl:h-[32.5em] object-top  object-cover z-[-1]' />
       
       
-        <img src={diningTable} alt="" className='absolute  top-[-13em] md:top-[-14em]  right-0  md:right-[-17.5%]  xl:right-[-137%]   w-[50%] xl:w-[28.5625em] h-[15em] md:h-[20em] xl:h-[32.5em] object-top  object-cover z-[-1]' />
+        <img src={diningTable} alt="" className='absolute  top-[-13em] md:top-[-14em]  right-0  md:right-[-17.5%]  xl:right-[-137%]   w-[50%] xl:w-[28.5625em] h-[15em] md:h-[20em] xl:h-[38.5625em] object-top  object-cover z-[-1]' />
 
 
 
