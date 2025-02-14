@@ -7,10 +7,10 @@ export default function HomeAboutUs() {
   return (
 
 
-    <div className="relative max-w-[1200px] lg:mx-auto px-[1.25em]  border border-[#58B498] green pt-[20em] z-20">
+    <div className="relative max-w-[1200px] lg:mx-auto px-[1.25em]   pt-[20em] z-20">
 
         
-      <div className="relative flex flex-col border border-[#58B498] green p-[3em]  md:max-w-[85%] xl:max-w-[30.4375em] bg-white  ">
+      <div className="relative flex flex-col  p-[3em]  md:max-w-[85%] xl:max-w-[30.4375em] bg-white  ">
 
 
 
