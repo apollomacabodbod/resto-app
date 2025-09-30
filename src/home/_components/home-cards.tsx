@@ -1,14 +1,54 @@
-import spaghetti from "src/assets/home-cards/spaghetti-meatball.jpg";
+import chineseMain from "src/assets/home-cards/chinese-main.jpg";
+import yummyPistachio from "src/assets/home-cards/yummy-pistachio.jpg";
+import chickenTikka from "src/assets/home-cards/chicken-tikka.jpg";
+import pumpkinPie from "src/assets/home-cards/pumpkin-pie.jpg";
+
+const fakeData = [
+  {
+    title: "Starters",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    image: chineseMain,
+  },
+  {
+    title: "Starters",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    image: yummyPistachio,
+  },
+  {
+    title: "Starters",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    image: chickenTikka, // reuse for now
+  },
+  {
+    title: "Starters",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    image: pumpkinPie, // reuse for now
+  },
+];
 
 export default function HomeCards() {
   return (
-    <>
-      <div
-        className="relative bg-cover bg-center h-64 w-[200px]"
-        style={{
-          backgroundImage: `url(${spaghetti})`,
-        }}
-      ></div>
-    </>
+    <div className="grid grid-cols-1  md:grid-cols-2  gap-y-[6.75em] gap-x-[1.875em] border border-[#50B498] green ">
+      {fakeData.map((item, index) => (
+        <div key={index} className="flex flex-col w-full">
+          {/* Image instead of background */}
+          <div
+            key={index}
+            className="relative h-[18.25em] bg-cover bg-center bg-no-repeat  "
+            style={{ backgroundImage: `url(${item.image})` }}
+          >
+            {/* Optional overlay for text */}
+            <div className="absolute flex flex-col  w-full md:w-auto bg-[#37343E] text-white  top-[13.0625em] md:top-[12.0625em] p-[1.5em] md:mx-[1.520625em]">
+              <h2 className="text-[#FFF4E2] text-[1.5rem] font-literata font-medium">
+                {item.title}
+              </h2>
+              <p className="mt-[0.5em] text-[#90A3B1] font-inter text-[1rem] font-normal ">
+                {item.description}
+              </p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
   );
 }

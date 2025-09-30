@@ -21,10 +21,10 @@ export default function Home() {
 
       <div className="relative bg-gradient-to-b from-[#BB3A12] to-[#28252E]/100 ">
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black/50 "></div>
+        <div className="absolute inset-0 bg-black/60 "></div>
 
         {/* About Us component */}
-        <div className="relative z-60 border border-[#50B498] green   ">
+        <div className="relative z-60 ">
           <HomeAboutUs />
           <HomeServe />
           <HomeServeWrapper />
