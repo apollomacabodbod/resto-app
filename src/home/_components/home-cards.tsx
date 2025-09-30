@@ -2,6 +2,7 @@ import chineseMain from "src/assets/home-cards/chinese-main.jpg";
 import yummyPistachio from "src/assets/home-cards/yummy-pistachio.jpg";
 import chickenTikka from "src/assets/home-cards/chicken-tikka.jpg";
 import pumpkinPie from "src/assets/home-cards/pumpkin-pie.jpg";
+import { motion } from "framer-motion";
 
 const fakeData = [
   {
@@ -30,7 +31,21 @@ export default function HomeCards() {
   return (
     <div className="grid grid-cols-1  md:grid-cols-2  gap-y-[6.75em] gap-x-[1.875em] border border-[#50B498] green ">
       {fakeData.map((item, index) => (
-        <div key={index} className="flex flex-col w-full">
+        <motion.div
+          key={index}
+          className="flex flex-col w-full"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: {
+              opacity: 1,
+              y: 0,
+              transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+            },
+          }}
+        >
           {/* Image instead of background */}
           <div
             key={index}
@@ -38,16 +53,29 @@ export default function HomeCards() {
             style={{ backgroundImage: `url(${item.image})` }}
           >
             {/* Optional overlay for text */}
-            <div className="absolute flex flex-col  w-full md:w-auto bg-[#37343E] text-white  top-[13.0625em] md:top-[12.0625em] p-[1.5em] md:mx-[1.520625em]">
+            <motion.div
+              className="absolute flex flex-col  w-full md:w-auto bg-[#37343E] text-white  top-[13.0625em] md:top-[12.0625em] p-[1.5em] md:mx-[1.520625em]"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, y: 10 },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                },
+              }}
+            >
               <h2 className="text-[#FFF4E2] text-[1.5rem] font-literata font-medium">
                 {item.title}
               </h2>
               <p className="mt-[0.5em] text-[#90A3B1] font-inter text-[1rem] font-normal ">
                 {item.description}
               </p>
-            </div>
+            </motion.div>
           </div>
-        </div>
+        </motion.div>
       ))}
     </div>
   );
