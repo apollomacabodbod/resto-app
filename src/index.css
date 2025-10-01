@@ -58,16 +58,31 @@
   }
 }
 
+/* Hide default date icon in Chrome, Safari, Edge */
+.custom-date-input::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  display: none;
+}
 
+.custom-date-input::-webkit-inner-spin-button,
+.custom-date-input::-webkit-clear-button {
+  display: none;
+  -webkit-appearance: none;
+}
 
+/* Hide in Firefox */
+.custom-date-input::-moz-calendar-picker-indicator {
+  opacity: 0;
+  display: none;
+}
 
-
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
 
 /* Common scrollbar styling */
 ::-webkit-scrollbar {
