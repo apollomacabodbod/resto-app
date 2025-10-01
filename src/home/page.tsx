@@ -3,7 +3,6 @@ import HomeHeroSection from "./_components/home-hero-section";
 import HomeAboutUs from "./_components/about-us";
 import HomeServe from "./_components/home-serve";
 import HomeServeWrapper from "./_components/home-serve-wrapper";
-import CarouselDApiDemo from "./_components/home-carousel";
 import Carousel from "./_components/home-carousel";
 
 export default function Home() {
