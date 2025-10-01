@@ -2,6 +2,8 @@ import dropDown from "src/assets/home-cards/dropdown.svg";
 import date from "src/assets/home-cards/date.svg";
 import serveButton from "src/assets/home-cards/serve-button.svg";
 import { useState } from "react";
+import { motion } from "framer-motion";
+
 export default function HomeReservation() {
   const [selectOpen, setSelectOpen] = useState(false);
   return (
@@ -11,24 +13,87 @@ export default function HomeReservation() {
           action=""
           className="flex flex-col border border-dashed border-[#E4C620] green p-[2em]"
         >
-          <p className="text-[#BB3A12] font-literata text-[2.25rem] font-medium text-center ">
+          <motion.p
+            className="text-[#BB3A12] font-literata text-[2.25rem] font-medium text-center "
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+              },
+            }}
+          >
             Reservation
-          </p>
-          <p className="text-center text-[#28252E] font-inter font-semibold text-[1.25rem]">
+          </motion.p>
+          <motion.p
+            className="text-center text-[#28252E] font-inter font-semibold text-[1.25rem]"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+              },
+            }}
+          >
             Online Booking
-          </p>
-          <p className="text-[1rem] text-[#90A3B1] font-inter font-normal text-center mt-[1em]">
+          </motion.p>
+          <motion.p
+            className="text-[1rem] text-[#90A3B1] font-inter font-normal text-center mt-[1em]"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+              },
+            }}
+          >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id at
             mauris dis tincidunt ipsum.
-          </p>
-          <input
+          </motion.p>
+          <motion.input
             type="text"
             className="border border-[#90A3B1] bg-[#FFF] py-[0.75em] px-[1em] mt-[2em]"
             placeholder="Name"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+              },
+            }}
           />
 
           {/* Custom Select with Arrow */}
-          <div className="relative mt-[1em]">
+          <motion.div
+            className="relative mt-[1em]"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+              },
+            }}
+          >
             <select
               className="w-full  border border-[#90A3B1] bg-white py-[0.75em] px-[1em] appearance-none"
               onFocus={() => setSelectOpen(true)}
@@ -46,10 +111,10 @@ export default function HomeReservation() {
                 selectOpen ? "rotate-180" : "rotate-0"
               }`}
             />
-          </div>
+          </motion.div>
 
           {/* Date Input with Custom Icon */}
-          <div
+          <motion.div
             className="relative mt-[1em]"
             onClick={() => {
               const input = document.getElementById(
@@ -57,6 +122,17 @@ export default function HomeReservation() {
               ) as HTMLInputElement;
               input?.showPicker?.(); // modern browsers
               input?.focus(); // fallback
+            }}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+              },
             }}
           >
             <input
@@ -69,21 +145,56 @@ export default function HomeReservation() {
               alt="Calendar Icon"
               className="w-[1em] h-[1em] absolute right-3 top-1/2 -translate-y-1/2 cursor-pointer"
             />
-          </div>
+          </motion.div>
 
-          <input
+          <motion.input
             type="text"
             className="border border-[#90A3B1] bg-[#FFF] py-[0.75em] px-[1em] mt-[1em]"
             placeholder="Phone"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+              },
+            }}
           />
 
-          <input
+          <motion.input
             type="text"
             className="border border-[#90A3B1] bg-[#FFF] py-[0.75em] px-[1em] mt-[1em]"
             placeholder="Email Address"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+              },
+            }}
           />
 
-          <button className="flex flex-col bg-[#E4C620] py-[0.75em] px-[1.5em] rounded-[3.125em] mt-[1em]">
+          <motion.button
+            className="flex flex-col bg-[#E4C620] py-[0.75em] px-[1.5em] rounded-[3.125em] mt-[1em]"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+              },
+            }}
+          >
             <div className="flex items-center gap-[0.5em] justify-center">
               <p className="text-[#28252E] font-inter text-[1rem] font-bold ">
                 Book Now
@@ -94,7 +205,7 @@ export default function HomeReservation() {
                 className="w-[0.4375em]"
               />
             </div>
-          </button>
+          </motion.button>
         </form>
       </div>
     </>
