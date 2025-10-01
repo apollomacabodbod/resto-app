@@ -3,6 +3,7 @@ import HomeHeroSection from "./_components/home-hero-section";
 import HomeAboutUs from "./_components/about-us";
 import HomeServe from "./_components/home-serve";
 import HomeServeWrapper from "./_components/home-serve-wrapper";
+import Carousel from "./_components/home-carousel";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
           <HomeAboutUs />
           <HomeServe />
           <HomeServeWrapper />
+          <Carousel />
         </div>
       </div>
     </>
