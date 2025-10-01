@@ -1,11 +1,12 @@
 import dropDown from "src/assets/home-cards/dropdown.svg";
 import date from "src/assets/home-cards/date.svg";
+import serveButton from "src/assets/home-cards/serve-button.svg";
 import { useState } from "react";
 export default function HomeReservation() {
   const [selectOpen, setSelectOpen] = useState(false);
   return (
     <>
-      <div className="flex flex-col bg-[#FFF3E0] shadow-[15px_15px_0_0_#BB3A12] p-[2em]">
+      <div className="flex flex-col bg-[#FFF3E0] shadow-[15px_15px_0_0_#BB3A12] p-[2em] mt-[3em] lg:mt-[0em]">
         <form
           action=""
           className="flex flex-col border border-dashed border-[#E4C620] green p-[2em]"
@@ -16,20 +17,20 @@ export default function HomeReservation() {
           <p className="text-center text-[#28252E] font-inter font-semibold text-[1.25rem]">
             Online Booking
           </p>
-          <p className="text-[1rem] text-[#90A3B1] font-inter font-normal text-center">
+          <p className="text-[1rem] text-[#90A3B1] font-inter font-normal text-center mt-[1em]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id at
             mauris dis tincidunt ipsum.
           </p>
           <input
             type="text"
-            className="border border-[#90A3B1] bg-[#FFF] py-[0.75em] px-[1em]"
+            className="border border-[#90A3B1] bg-[#FFF] py-[0.75em] px-[1em] mt-[2em]"
             placeholder="Name"
           />
 
           {/* Custom Select with Arrow */}
-          <div className="relative">
+          <div className="relative mt-[1em]">
             <select
-              className="w-full border border-[#90A3B1] bg-white py-[0.75em] px-[1em] appearance-none"
+              className="w-full  border border-[#90A3B1] bg-white py-[0.75em] px-[1em] appearance-none"
               onFocus={() => setSelectOpen(true)}
               onBlur={() => setSelectOpen(false)}
             >
@@ -49,7 +50,7 @@ export default function HomeReservation() {
 
           {/* Date Input with Custom Icon */}
           <div
-            className="relative"
+            className="relative mt-[1em]"
             onClick={() => {
               const input = document.getElementById(
                 "date-input"
@@ -69,6 +70,31 @@ export default function HomeReservation() {
               className="w-[1em] h-[1em] absolute right-3 top-1/2 -translate-y-1/2 cursor-pointer"
             />
           </div>
+
+          <input
+            type="text"
+            className="border border-[#90A3B1] bg-[#FFF] py-[0.75em] px-[1em] mt-[1em]"
+            placeholder="Phone"
+          />
+
+          <input
+            type="text"
+            className="border border-[#90A3B1] bg-[#FFF] py-[0.75em] px-[1em] mt-[1em]"
+            placeholder="Email Address"
+          />
+
+          <button className="flex flex-col bg-[#E4C620] py-[0.75em] px-[1.5em] rounded-[3.125em] mt-[1em]">
+            <div className="flex items-center gap-[0.5em] justify-center">
+              <p className="text-[#28252E] font-inter text-[1rem] font-bold ">
+                Book Now
+              </p>
+              <img
+                src={serveButton}
+                alt="serve button"
+                className="w-[0.4375em]"
+              />
+            </div>
+          </button>
         </form>
       </div>
     </>
