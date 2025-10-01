@@ -29,7 +29,7 @@ const fakeData = [
 
 export default function HomeCards() {
   return (
-    <div className="grid grid-cols-1  md:grid-cols-2  gap-y-[6.75em] gap-x-[1.875em] border border-[#50B498] green ">
+    <div className="grid grid-cols-1  md:grid-cols-2  gap-y-[6.75em] gap-x-[1.875em]  ">
       {fakeData.map((item, index) => (
         <motion.div
           key={index}
