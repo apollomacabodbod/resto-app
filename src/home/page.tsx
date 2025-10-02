@@ -5,7 +5,8 @@ import HomeServe from "./_components/home-serve";
 import HomeServeWrapper from "./_components/home-serve-wrapper";
 import Carousel from "./_components/home-carousel";
 import HomeMenus from "./_components/home-menus";
-import HomeMenusCards from "./_components/home-meus-cards";
+import HomeMenusCards from "./_components/home-menus-cards";
+import ViewAllMenusButton from "./_components/home-view-menus";
 
 export default function Home() {
   return (
@@ -34,6 +35,7 @@ export default function Home() {
           <Carousel />
           <HomeMenus />
           <HomeMenusCards />
+          <ViewAllMenusButton />
         </div>
       </div>
     </>

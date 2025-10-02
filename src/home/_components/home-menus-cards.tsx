@@ -81,7 +81,7 @@ export default function HomeMenusCards() {
           <div
             className="
       absolute 
-      bottom-[-62.5%]
+      bottom-[-72%]
       xl:left-[11.125em]
       xl:bottom-[0]
       xl:top-1/2  xl:-translate-y-1/2
