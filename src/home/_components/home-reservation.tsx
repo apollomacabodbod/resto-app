@@ -4,8 +4,12 @@ import serveButton from "src/assets/home-cards/serve-button.svg";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+
 export default function HomeReservation() {
   const [selectOpen, setSelectOpen] = useState(false);
+  const [startDate, setStartDate] = useState<Date | null>(null);
   return (
     <>
       <div className="flex flex-col bg-[#FFF3E0] shadow-[15px_15px_0_0_#BB3A12] p-[2em] mt-[3em] lg:mt-[0em]">
@@ -113,39 +117,23 @@ export default function HomeReservation() {
             />
           </motion.div>
 
-          {/* Date Input with Custom Icon */}
-          <motion.div
-            className="relative mt-[1em]"
-            onClick={() => {
-              const input = document.getElementById(
-                "date-input"
-              ) as HTMLInputElement;
-              input?.showPicker?.(); // modern browsers
-              input?.focus(); // fallback
-            }}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
-            variants={{
-              hidden: { opacity: 0, y: 10 },
-              visible: {
-                opacity: 1,
-                y: 0,
-                transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
-              },
-            }}
-          >
-            <input
-              id="date-input"
-              type="date"
-              className="custom-date-input w-full border border-[#90A3B1] bg-[#FFF] py-[0.75em] px-[1em] pr-[2.5em]"
+          <div className="relative mt-[1em] w-full">
+            <DatePicker
+              selected={startDate}
+              onChange={(date) => setStartDate(date)}
+              placeholderText="Date"
+              dateFormat="MM/dd/yyyy"
+              className="w-full border border-[#90A3B1] bg-[#FFF] py-[0.75em] pl-[1em] pr-[2.5em]  focus:outline-none"
+              wrapperClassName="w-full" // 👈 Force DatePicker wrapper to full width
             />
+
+            {/* Calendar Icon */}
             <img
               src={date}
               alt="Calendar Icon"
-              className="w-[1em] h-[1em] absolute right-3 top-1/2 -translate-y-1/2 cursor-pointer"
+              className="w-[1em] h-[1em] absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none"
             />
-          </motion.div>
+          </div>
 
           <motion.input
             type="text"
