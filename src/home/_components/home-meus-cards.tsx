@@ -4,6 +4,7 @@ import seafoodPasta from "src/assets/home-menus-cards/seafood-pasta.jpg";
 import spaghettiMeatball from "src/assets/home-menus-cards/spaghetti-meatball.jpg";
 import chineseMain from "src/assets/home-menus-cards/chinese-main.jpg";
 import yummyPistachio from "src/assets/home-menus-cards/yummy-pistachio.jpg";
+import { motion } from "framer-motion";
 
 export default function HomeMenusCards() {
   const data = [
@@ -60,16 +61,27 @@ export default function HomeMenusCards() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 max-w-[1200px] lg:mx-auto px-[1.25em] gap-y-[11em] gap-[3.75em] xl:gap-[3.75em] mt-[3.6875em]">
       {data.map((item) => (
-        <div
+        <motion.div
           key={item.id}
           className="relative flex flex-col bg-cover bg-center bg-no-repeat h-[12.5em] w-full xl:w-[12.5em]"
           style={{ backgroundImage: `url(${item.image})` }}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: {
+              opacity: 1,
+              y: 0,
+              transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+            },
+          }}
         >
           {/* Absolute box */}
           <div
             className="
       absolute 
-      bottom-[-9.3em]
+      bottom-[-62.5%]
       xl:left-[11.125em]
       xl:bottom-[0]
       xl:top-1/2  xl:-translate-y-1/2
@@ -93,7 +105,7 @@ export default function HomeMenusCards() {
               {item.description}
             </p>
           </div>
-        </div>
+        </motion.div>
       ))}
     </div>
   );
