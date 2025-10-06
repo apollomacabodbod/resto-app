@@ -7,6 +7,7 @@ import Carousel from "./_components/home-carousel";
 import HomeMenus from "./_components/home-menus";
 import HomeMenusCards from "./_components/home-menus-cards";
 import ViewAllMenusButton from "./_components/home-view-menus";
+import HomeServicesCard from "./_components/home-services-card";
 
 export default function Home() {
   return (
@@ -36,6 +37,10 @@ export default function Home() {
           <HomeMenus />
           <HomeMenusCards />
           <ViewAllMenusButton />
+        </div>
+
+        <div className="relative z-60 ">
+          <HomeServicesCard />
         </div>
       </div>
     </>
