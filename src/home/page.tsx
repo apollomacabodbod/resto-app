@@ -40,7 +40,11 @@ export default function Home() {
         </div>
 
         <div className="relative z-60 ">
-          <HomeServicesCard />
+          <div className="max-w-[1200px] lg:mx-auto px-[1.25em] mt-[6.5em]">
+            <div className="flex flex-col bg-[#BB3A12] px-[1.25em] xl:px-[7.125em] pt-[6.25em] ">
+              <HomeServicesCard />
+            </div>
+          </div>
         </div>
       </div>
     </>
