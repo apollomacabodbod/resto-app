@@ -27,7 +27,7 @@ export default function HomeTestimontials() {
               at mauris dis tincidunt ipsum faucibus ipsum.
             </p>
 
-            <div className="flex flex-col p-[2em] border border-[#50B498] bg-[#FFF4E2] mt-[3.375em]">
+            <div className="flex flex-col p-[2em] bg-[#FFF4E2] mt-[3.375em]">
               <img
                 src={quotes}
                 alt=""
@@ -69,7 +69,7 @@ export default function HomeTestimontials() {
             />
 
             {/* CARD OVERLAY */}
-            <div className="absolute  top-[39.2%] lg-custom:top-[39.2%] w-[93%] lg-custom:w-[34.6875em] left-0 right-0 lg:right-[25%] lg-custom:right-[-47%] mx-auto   flex flex-col p-[2em] border border-[#50B498] bg-[#FFF4E2] max-w-[1200px] lg:mx-auto px-[1.25em]">
+            <div className="absolute  top-[39.2%] lg-custom:top-[39.2%] w-[93%] lg-custom:w-[34.6875em] left-0 right-0 lg:right-[25%] lg-custom:right-[-47%] mx-auto   flex flex-col p-[2em]  bg-[#FFF4E2] max-w-[1200px] lg:mx-auto px-[1.25em]">
               <img
                 src={quotes}
                 alt=""
