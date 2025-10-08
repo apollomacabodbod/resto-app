@@ -4,17 +4,17 @@ module.exports = {
   content: ["src/**/*.{ts,tsx}", "components/**/*.{ts,tsx}"],
   theme: {
     extend: {
-
+      screens: {
+        "md-custom": "874px",
+      },
 
       fontFamily: {
-        'roboto': ["Roboto", "sans-serif"],
-        'literata' : ["Literata", "serif"],
-        'inter': ["Inter", "serif"],
-        'literata': ["Literata", "serif"]
-       },
+        roboto: ["Roboto", "sans-serif"],
+        literata: ["Literata", "serif"],
+        inter: ["Inter", "serif"],
+        literata: ["Literata", "serif"],
+      },
 
-
-       
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -58,4 +58,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};
