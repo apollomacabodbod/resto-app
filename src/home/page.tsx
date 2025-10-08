@@ -8,6 +8,7 @@ import HomeMenus from "./_components/home-menus";
 import HomeMenusCards from "./_components/home-menus-cards";
 import ViewAllMenusButton from "./_components/home-view-menus";
 import HomeServicesCard from "./_components/home-services-card";
+import HomeServicesCorporate from "./_components/home-services-corporate";
 
 export default function Home() {
   return (
@@ -43,6 +44,7 @@ export default function Home() {
           <div className="max-w-[1200px] lg:mx-auto px-[1.25em] mt-[6.5em]">
             <div className="flex flex-col bg-[#BB3A12] px-[1.25em] xl:px-[7.125em] pt-[6.25em] ">
               <HomeServicesCard />
+              <HomeServicesCorporate />
             </div>
           </div>
         </div>
