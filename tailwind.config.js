@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       screens: {
         "md-custom": "874px",
+        "lg-custom": "1260px",
       },
 
       fontFamily: {
