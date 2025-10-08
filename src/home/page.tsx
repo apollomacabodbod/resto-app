@@ -10,6 +10,7 @@ import ViewAllMenusButton from "./_components/home-view-menus";
 import HomeServicesCard from "./_components/home-services-card";
 import HomeServicesCorporate from "./_components/home-services-corporate";
 import HomeServicesWedding from "./_components/home-services-wedding";
+import HomeServicesCorporateCard from "./_components/home-services-corporate-card";
 
 export default function Home() {
   return (
@@ -47,6 +48,7 @@ export default function Home() {
               <HomeServicesCard />
               <HomeServicesCorporate />
               <HomeServicesWedding />
+              <HomeServicesCorporateCard />
             </div>
           </div>
         </div>
