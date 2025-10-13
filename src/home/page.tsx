@@ -12,6 +12,7 @@ import HomeServicesCorporate from "./_components/home-services-corporate";
 import HomeServicesWedding from "./_components/home-services-wedding";
 import HomeServicesCorporateCard from "./_components/home-services-corporate-card";
 import HomeTestimontials from "./_components/home-testimontials";
+import HomeLatestNews from "./_components/home-latest-news";
 
 export default function Home() {
   return (
@@ -56,6 +57,7 @@ export default function Home() {
 
         <div className="relative z-60">
           <HomeTestimontials />
+          <HomeLatestNews />
         </div>
       </div>
     </>
