@@ -11,6 +11,7 @@ import HomeServicesCard from "./_components/home-services-card";
 import HomeServicesCorporate from "./_components/home-services-corporate";
 import HomeServicesWedding from "./_components/home-services-wedding";
 import HomeServicesCorporateCard from "./_components/home-services-corporate-card";
+import HomeTestimontials from "./_components/home-testimontials";
 
 export default function Home() {
   return (
@@ -51,6 +52,10 @@ export default function Home() {
               <HomeServicesCorporateCard />
             </div>
           </div>
+        </div>
+
+        <div className="relative z-60">
+          <HomeTestimontials />
         </div>
       </div>
     </>
