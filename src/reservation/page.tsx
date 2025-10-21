@@ -1,7 +1,8 @@
 import happyYoungFriends from "src/assets/reservation/happy-young-friends.jpg";
 import ReservationHeroSection from "./_components/reservation-hero-section";
+import Reservation from "./_components/reservation";
 
-export default function Reservation() {
+export default function HomeReservation() {
   return (
     <>
       <div
@@ -15,6 +16,10 @@ export default function Reservation() {
         <div className="z-10 ">
           <ReservationHeroSection />
         </div>
+      </div>
+
+      <div className="bg-[#28252E] ">
+        <Reservation />
       </div>
     </>
   );
