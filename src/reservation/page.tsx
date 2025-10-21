@@ -2,7 +2,6 @@ import happyYoungFriends from "src/assets/reservation/happy-young-friends.jpg";
 import ReservationHeroSection from "./_components/reservation-hero-section";
 import Reservation from "./_components/reservation";
 import HomeServe from "../home/_components/home-serve";
-import HomeCards from "../home/_components/home-cards";
 import ReservationServeCards from "./_components/reservation-serve-cards";
 
 export default function HomeReservation() {
