@@ -5,6 +5,7 @@ import Header from "./components/kit/header";
 import { LenisProvider } from "./context/smooth-scroll";
 import Footer from "./components/kit/footer";
 import Reservation from "./reservation/page";
+import Menu from "./menu/page";
 
 function App() {
   const location = useLocation(); // Now safe to use because it's inside a Router
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/reservation" element={<Reservation />} />
+          <Route path="/menu" element={<Menu />} />
         </Routes>
 
         <div key={location.pathname}>
