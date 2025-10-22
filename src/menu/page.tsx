@@ -4,6 +4,9 @@ import Rectangle from "src/assets/discover-our-menu/Rectangle.svg";
 import MenuDiscoverOurMenu from "./_components/menu-discover-our-menu";
 import MenuDiscoverCards from "./_components/menu-discover-cards";
 import ViewAllMenusButton from "../home/_components/home-view-menus";
+import HomeTestimontials from "../home/_components/home-testimontials";
+import MenuTestimontials from "./_components/menu-testimontials";
+import MenuViewMenus from "./_components/menu-view-menus";
 
 export default function Menu() {
   return (
@@ -28,8 +31,12 @@ export default function Menu() {
         <div className="z-10">
           <MenuDiscoverOurMenu />
           <MenuDiscoverCards />
-          <ViewAllMenusButton />
+          <MenuViewMenus />
         </div>
+      </div>
+
+      <div className="z-10 ">
+        <MenuTestimontials />
       </div>
     </>
   );
