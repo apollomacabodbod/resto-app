@@ -6,7 +6,7 @@ import chineseMain from "src/assets/home-menus-cards/chinese-main.jpg";
 import yummyPistachio from "src/assets/home-menus-cards/yummy-pistachio.jpg";
 import { motion } from "framer-motion";
 
-export default function HomeMenusCards() {
+export default function MenuDiscoverCards() {
   const data = [
     {
       id: 1,
@@ -59,7 +59,7 @@ export default function HomeMenusCards() {
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 max-w-[1200px] lg:mx-auto px-[1.25em] gap-y-[11em] gap-[3.75em] xl:gap-[3.75em] mt-[3.6875em]">
+    <div className="grid grid-cols-1 md:grid-cols-2 max-w-[1200px] lg:mx-auto px-[1.25em] gap-y-[11em] gap-[3.75em] xl:gap-[3.75em] mt-[3.6875em] ">
       {data.map((item) => (
         <motion.div
           key={item.id}
@@ -81,7 +81,7 @@ export default function HomeMenusCards() {
           <div
             className="
       absolute 
-       bottom-[-63%]
+      bottom-[-63%]
       lg:bottom-[-72%]
       xl:left-[11.125em]
       xl:bottom-[0]
