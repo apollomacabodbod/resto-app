@@ -3,8 +3,6 @@ import MenuHeroSection from "./_components/menu-hero-section";
 import Rectangle from "src/assets/discover-our-menu/Rectangle.svg";
 import MenuDiscoverOurMenu from "./_components/menu-discover-our-menu";
 import MenuDiscoverCards from "./_components/menu-discover-cards";
-import ViewAllMenusButton from "../home/_components/home-view-menus";
-import HomeTestimontials from "../home/_components/home-testimontials";
 import MenuTestimontials from "./_components/menu-testimontials";
 import MenuViewMenus from "./_components/menu-view-menus";
 
