@@ -3,6 +3,7 @@ import MenuHeroSection from "./_components/menu-hero-section";
 import Rectangle from "src/assets/discover-our-menu/Rectangle.svg";
 import MenuDiscoverOurMenu from "./_components/menu-discover-our-menu";
 import MenuDiscoverCards from "./_components/menu-discover-cards";
+import ViewAllMenusButton from "../home/_components/home-view-menus";
 
 export default function Menu() {
   return (
@@ -27,6 +28,7 @@ export default function Menu() {
         <div className="z-10">
           <MenuDiscoverOurMenu />
           <MenuDiscoverCards />
+          <ViewAllMenusButton />
         </div>
       </div>
     </>
