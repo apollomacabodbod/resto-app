@@ -1,5 +1,6 @@
 import workingInRestaurant from "src/assets/blog/working-in-restaurant.jpg";
 import BlogHeroSection from "./_components/blog-hero-section";
+import BlogLatestNews from "./_components/blog-latest-news";
 
 export default function Blog() {
   return (
@@ -13,6 +14,10 @@ export default function Blog() {
         <div className="z-10">
           <BlogHeroSection />
         </div>
+      </div>
+
+      <div className="z-10 bg-[#28252E]">
+        <BlogLatestNews />
       </div>
     </>
   );
