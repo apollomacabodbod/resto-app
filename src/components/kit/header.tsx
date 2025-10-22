@@ -60,7 +60,7 @@ export default function Header() {
                   MENU
                 </Link>
                 <Link
-                  to={""}
+                  to={"/blog"}
                   className="text-white font-inter text-[0.875rem] not-italic font-bold "
                 >
                   {" "}
