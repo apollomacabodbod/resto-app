@@ -53,10 +53,10 @@ export default function Header() {
                   RESERVATION
                 </Link>
                 <Link
-                  to={""}
+                  to={"/menu"}
                   className="text-white font-inter text-[0.875rem] not-italic font-bold "
                 >
-                  {" "}
+                  {""}
                   MENU
                 </Link>
                 <Link
