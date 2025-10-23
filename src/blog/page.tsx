@@ -2,6 +2,8 @@ import workingInRestaurant from "src/assets/blog/working-in-restaurant.jpg";
 import BlogHeroSection from "./_components/blog-hero-section";
 import BlogLatestNews from "./_components/blog-latest-news";
 import BlogReadMore from "./_components/blog-read-more";
+import BlogExploreMoreCards from "./_components/blog-explore-more-cards";
+import BlogExploreMore from "./_components/blog-explore-more";
 
 export default function Blog() {
   return (
@@ -20,6 +22,8 @@ export default function Blog() {
       <div className="z-10 bg-[#28252E]">
         <BlogLatestNews />
         <BlogReadMore />
+        <BlogExploreMore />
+        <BlogExploreMoreCards />
       </div>
     </>
   );
