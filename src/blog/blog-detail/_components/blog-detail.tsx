@@ -81,14 +81,80 @@ export default function BlogDetail() {
 
   return (
     <>
-      <div className="flex flex-col">
-        <h1>{blog?.comments}</h1>
+      <div className="bg-[#28252E]">
+        <div className="flex flex-col max-w-[1200px] lg:mx-auto px-[1.25em] mt-[8.125em]">
+          {/* <h1>{blog?.comments}</h1>
         <p>{blog?.description}</p>
         <img
           src={blog?.image}
           alt={blog?.description}
-          className="h-[31.25em] object-cover"
-        />
+        /> */}
+
+          <img src={blog?.image} alt="" className="object-cover h-[31.25em]" />
+
+          <p className="text-[#FFF4E2] font-literata text-[3.25rem] font-medium mt-[0.5em]">
+            Halloween Decoration Ideas For Your Home
+          </p>
+
+          <p className="text-[#90A3B1] font-inter text-[1rem] font-normal">
+            July 18, 2022 No Comments
+          </p>
+
+          <p className="text-[#FFF4E2] font-inter text-[1.25rem] font-semibold mt-[1em]">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+          </p>
+
+          <p className="text-[#90A3B1] font-inter text-[1rem] font-normal mt-[1em]">
+            Bibendum leo, sapien, nisl bibendum. Ultricies urna ultricies risus,
+            at. Risus tincidunt netus et pellentesque maecenas pulvinar. Arcu
+            duis tortor turpis nunc, nunc est blandit. Vel volutpat purus mauris
+            condimentum amet tellus scelerisque semper blandit. Feugiat accumsan
+            blandit acu, integer faucibus. At cursus elit hac vitae nec tortor
+            iaculis viverra. Sem aliquet vulputate metus tristique sem commodo
+            faucibus. Sagittis sittis eget at sit posuere est at. Eget eget id
+            iaculis at{" "}
+          </p>
+
+          {/* <div className="flex items-center mt-[1em] ">
+            <p className="text-[#90A3B1] font-inter text-[1rem] font-normal">
+              Bibendum sit pharetra vitae pellentesque sodales neque mollis oci,
+              purus. Feugiat volutp eu velit purus enim cum. Eu ipsum vierra
+              isse placerat leo. Libero vel mi porttitor luctus viverra a vel
+              veicula ultricies. Tellus egestas ac in sit et quis vitae. Metus
+              auctor.
+              <br />
+              <br />
+              Bibendum sit pharetra vitae pellentesque sodales neque mollis oci,
+              purus. Feugiat volutp eu velit purus enim cum.
+            </p>
+
+            <img src={chineseMainCourse} alt="" className="object-cover" />
+          </div> */}
+
+          <div className="grid  sm:grid-cols-2 mt-[1em] gap-[2em]">
+            <div className="flex flex-col">
+              <p className="text-[#90A3B1] font-inter text-[1rem] font-normal">
+                Bibendum sit pharetra vitae pellentesque sodales neque mollis
+                oci, purus. Feugiat volutp eu velit purus enim cum. Eu ipsum
+                vierra isse placerat leo. Libero vel mi porttitor luctus viverra
+                a vel veicula ultricies. Tellus egestas ac in sit et quis vitae.
+                Metus auctor.
+                <br />
+                <br />
+                Bibendum sit pharetra vitae pellentesque sodales neque mollis
+                oci, purus. Feugiat volutp eu velit purus enim cum.
+              </p>
+            </div>
+
+            <div className="flex flex-col">
+              <img
+                src={chineseMainCourse}
+                alt=""
+                className="object-cover sm:h-[12.5em]  "
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
