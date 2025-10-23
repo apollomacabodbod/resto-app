@@ -31,9 +31,12 @@ export default function Header() {
         <div className="flex flex-col  max-w-[1200px] lg:mx-auto  px-[1.25em]">
           <div className="flex items-center justify-between">
             <div className="flex items-center cursor-pointer ">
-              <div className="flex flex-col bg-[#BB3A12] py-[1.0625em] px-[1.375em]">
+              <Link
+                to={"/"}
+                className="flex flex-col bg-[#BB3A12] py-[1.0625em] px-[1.375em]"
+              >
                 <img src={logo} alt="" className="min-w-[7.5em]" />
-              </div>
+              </Link>
             </div>
 
             <div className="lg:flex lg:flex-col hidden">
