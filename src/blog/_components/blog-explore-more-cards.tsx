@@ -8,6 +8,8 @@ import chineseMainCourse from "src/assets/blog/chinese-main-course.jpg";
 import conceptOfTasty from "src/assets/blog/concept-of-tasty.jpg";
 import deliciousFoodConcept from "src/assets/blog/delicious-food-concept.jpg";
 
+import { motion } from "framer-motion";
+
 export default function BlogExploreMore() {
   const data = [
     {
@@ -79,17 +81,54 @@ export default function BlogExploreMore() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 max-w-[1200px] lg:mx-auto px-[1.25em] gap-[1.875em] mt-[3.125em]">
           {data.map((item) => (
             <div key={item.id} className="flex flex-col">
-              <img
+              <motion.img
                 src={item.image}
                 alt=""
                 className="md:h-[14.375em] w-full lg:w-[22.5em] object-cover object-center "
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, y: 10 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                  },
+                }}
               />
-              <p className="text-[#FFF4E2] font-inter text-[1.25rem] font-semibold mt-[1em]">
+              <motion.p
+                className="text-[#FFF4E2] font-inter text-[1.25rem] font-semibold mt-[1em]"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, y: 10 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                  },
+                }}
+              >
                 Super Easy Baked Feta Pasta
-              </p>
-              <p className="text-[#90A3B1] font-inter text-[1rem] font-normal mt-[0.5em] ">
+              </motion.p>
+              <motion.p
+                className="text-[#90A3B1] font-inter text-[1rem] font-normal mt-[0.5em] "
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, y: 10 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                  },
+                }}
+              >
                 July 18, 2022 No Comments
-              </p>
+              </motion.p>
             </div>
           ))}
         </div>
