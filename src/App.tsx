@@ -7,6 +7,7 @@ import Footer from "./components/kit/footer";
 import Reservation from "./reservation/page";
 import Menu from "./menu/page";
 import Blog from "./blog/page";
+import BlogDetail from "./blog/blog-detail/page";
 
 function App() {
   const location = useLocation(); // Now safe to use because it's inside a Router
@@ -21,6 +22,7 @@ function App() {
           <Route path="/reservation" element={<Reservation />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:id" element={<BlogDetail />} />
         </Routes>
 
         <div key={location.pathname}>

@@ -9,6 +9,7 @@ import conceptOfTasty from "src/assets/blog/concept-of-tasty.jpg";
 import deliciousFoodConcept from "src/assets/blog/delicious-food-concept.jpg";
 
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function BlogExploreMore() {
   const data = [
@@ -80,7 +81,11 @@ export default function BlogExploreMore() {
       <div className="bg-[#28252E] ">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 max-w-[1200px] lg:mx-auto px-[1.25em] gap-[1.875em] mt-[3.125em]">
           {data.map((item) => (
-            <div key={item.id} className="flex flex-col">
+            <Link
+              key={item.id}
+              to={`/blog/${item.id}`}
+              className="flex flex-col "
+            >
               <motion.img
                 src={item.image}
                 alt=""
@@ -129,7 +134,7 @@ export default function BlogExploreMore() {
               >
                 July 18, 2022 No Comments
               </motion.p>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
