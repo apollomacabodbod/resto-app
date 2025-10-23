@@ -100,11 +100,11 @@ export default function BlogDetail() {
             July 18, 2022 No Comments
           </p>
 
-          <p className="text-[#FFF4E2] font-inter text-[1.25rem] font-semibold mt-[1em]">
+          <p className="text-[#FFF4E2] font-inter text-[1.25rem] font-semibold mt-[2em]">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
           </p>
 
-          <p className="text-[#90A3B1] font-inter text-[1rem] font-normal mt-[1em]">
+          <p className="text-[#90A3B1] font-inter text-[1rem] font-normal mt-[2em]">
             Bibendum leo, sapien, nisl bibendum. Ultricies urna ultricies risus,
             at. Risus tincidunt netus et pellentesque maecenas pulvinar. Arcu
             duis tortor turpis nunc, nunc est blandit. Vel volutpat purus mauris
@@ -131,8 +131,18 @@ export default function BlogDetail() {
             <img src={chineseMainCourse} alt="" className="object-cover" />
           </div> */}
 
-          <div className="grid  sm:grid-cols-2 mt-[1em] gap-[2em]">
-            <div className="flex flex-col">
+          <div className="grid sm:grid-cols-2 mt-[2em] gap-[2em]">
+            {/* Image (left on small, right on large) */}
+            <div className="flex flex-col order-1 sm:order-2">
+              <img
+                src={chineseMainCourse}
+                alt=""
+                className="object-cover sm:h-[12.5em]"
+              />
+            </div>
+
+            {/* Text */}
+            <div className="flex flex-col order-2 sm:order-1">
               <p className="text-[#90A3B1] font-inter text-[1rem] font-normal">
                 Bibendum sit pharetra vitae pellentesque sodales neque mollis
                 oci, purus. Feugiat volutp eu velit purus enim cum. Eu ipsum
@@ -145,13 +155,32 @@ export default function BlogDetail() {
                 oci, purus. Feugiat volutp eu velit purus enim cum.
               </p>
             </div>
+          </div>
 
-            <div className="flex flex-col">
+          <div className="grid sm:grid-cols-2 mt-[2em] gap-[2em]">
+            {/* Image */}
+            <div className="flex flex-col sm:order-1 order-2">
               <img
-                src={chineseMainCourse}
+                src={traditionalChineseFood}
                 alt=""
-                className="object-cover sm:h-[12.5em]  "
+                className="object-cover sm:h-[12.5em]"
               />
+            </div>
+
+            {/* Text */}
+            <div className="flex flex-col sm:order-1 order-2">
+              <p className="text-[#90A3B1] font-inter text-[1rem] font-normal">
+                Pellentesque augue diam augue lectus.
+                <br />
+                <br />
+                Bibendum sit pharetra vitae pellentesque sodales neque mollis
+                oci, purus. Feugiat volutp eu velit purus enim cum.
+                <br />
+                <br />
+                Eu ipsum vierra isse placerat leo. Libero vel mi porttitor
+                luctus viverra a vel veicula ultricies. Tellus egestas ac in sit
+                et quis vitae. Metus auctor.
+              </p>
             </div>
           </div>
         </div>
