@@ -84,7 +84,7 @@ export default function BlogDetail() {
   return (
     <>
       <div className="bg-[#28252E]">
-        <div className="flex flex-col max-w-[1200px] lg:mx-auto px-[1.25em] mt-[8.125em]">
+        <div className="flex flex-col max-w-[1200px] lg:mx-auto px-[1.25em] lg:px-[8em] mt-[8.125em]">
           {/* <h1>{blog?.comments}</h1>
         <p>{blog?.description}</p>
         <img
@@ -200,7 +200,7 @@ export default function BlogDetail() {
             <img src={chineseMainCourse} alt="" className="object-cover" />
           </div> */}
 
-          <div className="grid sm:grid-cols-2 mt-[2em] gap-[2em]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 mt-[2em] gap-[2em]">
             {/* Image (left on small, right on large) */}
             <div className="flex flex-col order-1 sm:order-2">
               <motion.img
@@ -250,7 +250,7 @@ export default function BlogDetail() {
             </div>
           </div>
 
-          <div className="grid sm:grid-cols-2 mt-[2em] gap-[2em]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 mt-[2em] gap-[2em]">
             {/* Image */}
             <div className="flex flex-col sm:order-1 order-2">
               <motion.img
