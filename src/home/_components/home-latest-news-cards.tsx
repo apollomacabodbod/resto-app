@@ -34,7 +34,7 @@ export default function HomeLatestNewsCards() {
               <img
                 src={item.image}
                 alt=""
-                className="md:h-[14.375em] w-full lg:w-[22.5em] bg-cover bg-center "
+                className="md:h-[14.375em] w-full lg:w-[22.5em] object-cover object-center  "
               />
               <p className="text-[#FFF4E2] font-inter text-[1.25rem] font-semibold mt-[1em]">
                 Super Easy Baked Feta Pasta
