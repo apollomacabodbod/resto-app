@@ -8,6 +8,7 @@ import chineseCabbage from "src/assets/blog/chinese-cabbage.jpg";
 import chineseMainCourse from "src/assets/blog/chinese-main-course.jpg";
 import conceptOfTasty from "src/assets/blog/concept-of-tasty.jpg";
 import deliciousFoodConcept from "src/assets/blog/delicious-food-concept.jpg";
+import { motion } from "framer-motion";
 
 export default function BlogDetail() {
   const { id } = useParams(); // URL param like /blog/5
@@ -90,21 +91,88 @@ export default function BlogDetail() {
           alt={blog?.description}
         /> */}
 
-          <img src={blog?.image} alt="" className="object-cover h-[31.25em]" />
+          <motion.img
+            src={blog?.image}
+            alt=""
+            className="object-cover h-[31.25em]"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+              },
+            }}
+          />
 
-          <p className="text-[#FFF4E2] font-literata text-[3.25rem] font-medium mt-[0.5em]">
+          <motion.p
+            className="text-[#FFF4E2] font-literata text-[3.25rem] font-medium mt-[0.5em]"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+              },
+            }}
+          >
             Halloween Decoration Ideas For Your Home
-          </p>
+          </motion.p>
 
-          <p className="text-[#90A3B1] font-inter text-[1rem] font-normal">
+          <motion.p
+            className="text-[#90A3B1] font-inter text-[1rem] font-normal"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+              },
+            }}
+          >
             July 18, 2022 No Comments
-          </p>
+          </motion.p>
 
-          <p className="text-[#FFF4E2] font-inter text-[1.25rem] font-semibold mt-[2em]">
+          <motion.p
+            className="text-[#FFF4E2] font-inter text-[1.25rem] font-semibold mt-[2em]"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+              },
+            }}
+          >
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-          </p>
+          </motion.p>
 
-          <p className="text-[#90A3B1] font-inter text-[1rem] font-normal mt-[2em]">
+          <motion.p
+            className="text-[#90A3B1] font-inter text-[1rem] font-normal mt-[2em]"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+              },
+            }}
+          >
             Bibendum leo, sapien, nisl bibendum. Ultricies urna ultricies risus,
             at. Risus tincidunt netus et pellentesque maecenas pulvinar. Arcu
             duis tortor turpis nunc, nunc est blandit. Vel volutpat purus mauris
@@ -113,7 +181,7 @@ export default function BlogDetail() {
             iaculis viverra. Sem aliquet vulputate metus tristique sem commodo
             faucibus. Sagittis sittis eget at sit posuere est at. Eget eget id
             iaculis at{" "}
-          </p>
+          </motion.p>
 
           {/* <div className="flex items-center mt-[1em] ">
             <p className="text-[#90A3B1] font-inter text-[1rem] font-normal">
@@ -134,16 +202,40 @@ export default function BlogDetail() {
           <div className="grid sm:grid-cols-2 mt-[2em] gap-[2em]">
             {/* Image (left on small, right on large) */}
             <div className="flex flex-col order-1 sm:order-2">
-              <img
+              <motion.img
                 src={chineseMainCourse}
                 alt=""
                 className="object-cover sm:h-[12.5em]"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, y: 10 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                  },
+                }}
               />
             </div>
 
             {/* Text */}
             <div className="flex flex-col order-2 sm:order-1">
-              <p className="text-[#90A3B1] font-inter text-[1rem] font-normal">
+              <motion.p
+                className="text-[#90A3B1] font-inter text-[1rem] font-normal"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, y: 10 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                  },
+                }}
+              >
                 Bibendum sit pharetra vitae pellentesque sodales neque mollis
                 oci, purus. Feugiat volutp eu velit purus enim cum. Eu ipsum
                 vierra isse placerat leo. Libero vel mi porttitor luctus viverra
@@ -153,23 +245,47 @@ export default function BlogDetail() {
                 <br />
                 Bibendum sit pharetra vitae pellentesque sodales neque mollis
                 oci, purus. Feugiat volutp eu velit purus enim cum.
-              </p>
+              </motion.p>
             </div>
           </div>
 
           <div className="grid sm:grid-cols-2 mt-[2em] gap-[2em]">
             {/* Image */}
             <div className="flex flex-col sm:order-1 order-2">
-              <img
+              <motion.img
                 src={traditionalChineseFood}
                 alt=""
                 className="object-cover sm:h-[12.5em]"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, y: 10 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                  },
+                }}
               />
             </div>
 
             {/* Text */}
             <div className="flex flex-col sm:order-1 order-2">
-              <p className="text-[#90A3B1] font-inter text-[1rem] font-normal">
+              <motion.p
+                className="text-[#90A3B1] font-inter text-[1rem] font-normal"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, y: 10 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                  },
+                }}
+              >
                 Pellentesque augue diam augue lectus.
                 <br />
                 <br />
@@ -180,7 +296,7 @@ export default function BlogDetail() {
                 Eu ipsum vierra isse placerat leo. Libero vel mi porttitor
                 luctus viverra a vel veicula ultricies. Tellus egestas ac in sit
                 et quis vitae. Metus auctor.
-              </p>
+              </motion.p>
             </div>
           </div>
         </div>
