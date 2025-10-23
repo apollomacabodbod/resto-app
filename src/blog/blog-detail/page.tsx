@@ -1,5 +1,6 @@
 import BlogDetail from "./_components/blog-detail";
 import BlogRelatedArticles from "./_components/blog-related-articles";
+import BlogRelatedArticlesCards from "./_components/blog-related-articles-cards";
 
 export default function BlogDetails() {
   return (
@@ -10,6 +11,7 @@ export default function BlogDetails() {
 
       <div className="bg-[#28252E]">
         <BlogRelatedArticles />
+        <BlogRelatedArticlesCards />
       </div>
     </>
   );

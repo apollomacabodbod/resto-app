@@ -3,7 +3,7 @@ import pennePasta from "src/assets/latest-news/penne-pasta.jpg";
 import seafoodPasta from "src/assets/latest-news/seafood-pasta.jpg";
 import { motion } from "framer-motion";
 
-export default function HomeLatestNewsCards() {
+export default function BlogRelatedArticlesCards() {
   const data = [
     {
       id: 1,
@@ -28,7 +28,7 @@ export default function HomeLatestNewsCards() {
 
   return (
     <>
-      <div className="bg-[#28252E] ">
+      <div className="bg-[#28252E] mt-[3.9375em]">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-[1200px] lg:mx-auto px-[1.25em] gap-[1.875em]">
           {data.map((item) => (
             <div key={item.id} className="flex flex-col">
