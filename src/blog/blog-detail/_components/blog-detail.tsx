@@ -9,6 +9,7 @@ import chineseMainCourse from "src/assets/blog/chinese-main-course.jpg";
 import conceptOfTasty from "src/assets/blog/concept-of-tasty.jpg";
 import deliciousFoodConcept from "src/assets/blog/delicious-food-concept.jpg";
 import { motion } from "framer-motion";
+import BlogDetailLinks from "./blog-detail-links";
 
 export default function BlogDetail() {
   const { id } = useParams(); // URL param like /blog/5
@@ -299,6 +300,8 @@ export default function BlogDetail() {
               </motion.p>
             </div>
           </div>
+
+          <BlogDetailLinks />
         </div>
       </div>
     </>
