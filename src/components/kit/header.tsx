@@ -70,7 +70,7 @@ export default function Header() {
                   BLOG
                 </Link>
                 <Link
-                  to={""}
+                  to={"/shop"}
                   className="text-white font-inter text-[0.875rem] not-italic font-bold "
                 >
                   {" "}

@@ -8,6 +8,7 @@ import Reservation from "./reservation/page";
 import Menu from "./menu/page";
 import Blog from "./blog/page";
 import BlogDetail from "./blog/blog-detail/page";
+import Location from "./location/page";
 
 function App() {
   const location = useLocation(); // Now safe to use because it's inside a Router
@@ -23,6 +24,7 @@ function App() {
           <Route path="/menu" element={<Menu />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<BlogDetail />} />
+          <Route path="/shop" element={<Location />} />
         </Routes>
 
         <div key={location.pathname}>
