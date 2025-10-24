@@ -77,7 +77,7 @@ export default function Header() {
                   SHOP
                 </Link>
                 <Link
-                  to={""}
+                  to={"/contact"}
                   className="text-white font-inter text-[0.875rem] not-italic font-bold "
                 >
                   {" "}
