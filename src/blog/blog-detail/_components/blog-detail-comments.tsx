@@ -1,5 +1,6 @@
 import Rectangle from "src/assets/blog/Rectangle.svg";
 import { motion } from "framer-motion";
+import BlogDetailPostComment from "./blog-detail-post-comment";
 export default function BlogDetailComments() {
   return (
     <>
@@ -57,6 +58,8 @@ export default function BlogDetailComments() {
         >
           Your email address will not be published. Required fields are marked *
         </motion.p>
+
+        <BlogDetailPostComment />
       </div>
     </>
   );
