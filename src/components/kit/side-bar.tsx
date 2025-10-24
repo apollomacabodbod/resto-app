@@ -1,5 +1,5 @@
-import { FC, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import { FC, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 
 interface SidebarProps {
   sidebarOpen: boolean;
@@ -12,19 +12,22 @@ const Sidebar: FC<SidebarProps> = ({ sidebarOpen, setSidebarOpen }) => {
   // Close sidebar when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (sidebarRef.current && !sidebarRef.current.contains(event.target as Node)) {
+      if (
+        sidebarRef.current &&
+        !sidebarRef.current.contains(event.target as Node)
+      ) {
         setSidebarOpen(false);
       }
     };
 
     if (sidebarOpen) {
-      document.addEventListener('mousedown', handleClickOutside);
+      document.addEventListener("mousedown", handleClickOutside);
     } else {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     }
 
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [sidebarOpen, setSidebarOpen]);
 
@@ -36,11 +39,11 @@ const Sidebar: FC<SidebarProps> = ({ sidebarOpen, setSidebarOpen }) => {
       }
     };
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
     handleResize();
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, [setSidebarOpen]);
 
@@ -48,17 +51,15 @@ const Sidebar: FC<SidebarProps> = ({ sidebarOpen, setSidebarOpen }) => {
     <div
       ref={sidebarRef}
       className={`lg:hidden fixed top-0 right-0 w-[75%] max-w-[18em] min-h-screen z-50 transition-transform duration-500 ${
-        sidebarOpen ? 'translate-x-0' : 'translate-x-full'
+        sidebarOpen ? "translate-x-0" : "translate-x-full"
       }`}
     >
       {/* Blurred background and overlay */}
-      <div className="absolute inset-0 before:absolute before:inset-0 before:bg-[#28252E]/40 before:backdrop-blur-lg before:z-10">
-     
-      </div>
+      <div className="absolute inset-0 before:absolute before:inset-0 before:bg-[#28252E]/40 before:backdrop-blur-lg before:z-10"></div>
 
       <div className="flex flex-col items-start p-4 relative z-20">
         <img
-          src={'/close-icon.svg'}
+          src={"/close-icon.svg"}
           width={0}
           height={0}
           alt="menu icon"
@@ -69,10 +70,10 @@ const Sidebar: FC<SidebarProps> = ({ sidebarOpen, setSidebarOpen }) => {
         {/* Sidebar links */}
         {[
           { to: "/", label: "Home" },
-          { to: "/services", label: "Services" },
-          { to: "/camping", label: "Camping" },
-          { to: "/about", label: "About" },
+          { to: "/reservation", label: "Reservation" },
+          { to: "/menu", label: "Menu" },
           { to: "/blog", label: "Blog" },
+          { to: "/shop", label: "Shop" },
           { to: "/contact", label: "Contact" },
         ].map((link) => (
           <Link
