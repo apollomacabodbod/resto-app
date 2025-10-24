@@ -1,5 +1,7 @@
 import womanAtRestaurant from "src/assets/location/woman-at-restaurant.jpg";
 import LocationHeroSection from "./_components/location-hero-section";
+import OurLocation from "./_components/location-our-location";
+import LocationCards from "./_components/location-cards";
 
 export default function Location() {
   return (
@@ -13,6 +15,11 @@ export default function Location() {
         <div className="z-10">
           <LocationHeroSection />
         </div>
+      </div>
+
+      <div className="bg-[#28252E]">
+        <OurLocation />
+        <LocationCards />
       </div>
     </>
   );
