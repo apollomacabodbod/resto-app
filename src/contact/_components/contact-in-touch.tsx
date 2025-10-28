@@ -1,10 +1,8 @@
 import rectangleGray from "src/assets/contact/rectangle-gray.svg";
-import rightsideImage from "src/assets/contact/rightside-image.svg";
 import facebook from "src/assets/contact/facebook.svg";
 import twitter from "src/assets/contact/twitter.svg";
 import instagram from "src/assets/contact/instagram.svg";
 import youtube from "src/assets/contact/youtube.svg";
-import leftsideImage from "src/assets/contact/leftside-image.svg";
 import messageArrow from "src/assets/contact/message-arrow.svg";
 import professionalChef from "src/assets/contact/professional-chef.jpg";
 
