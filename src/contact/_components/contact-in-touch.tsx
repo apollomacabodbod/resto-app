@@ -64,9 +64,8 @@ export default function ContactInTouch() {
           </div>
 
           <div className="flex flex-col ">
-            {/* <img src={rightsideImage} alt="" className="object-cover h-full" /> */}
-
             <iframe
+              title="Google Map - 768 Market Street"
               width="100%"
               height="600"
               src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=768%20Market%20Street%20San%20Francisco,%20CA%2064015,%20United%20States+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
