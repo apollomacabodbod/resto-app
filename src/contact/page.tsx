@@ -19,7 +19,7 @@ export default function Contact() {
       <div className="relative flex flex-col bg-gradient-to-b from-[#BB3A12] to-[#28252E]/100">
         <div className="absolute inset-0 bg-black/50 "></div>
 
-        <div className="relative flex flex-col ">
+        <div className="z-10 max-w-[1200px] lg:mx-auto  px-[1.25em]">
           <ContactInTouch />
         </div>
       </div>
